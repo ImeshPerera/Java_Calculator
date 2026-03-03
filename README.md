@@ -1,120 +1,150 @@
-🧮 Java AWT Calculator
-Version 1.0 – Desktop Application
-<p align="center"> <b>A simple yet powerful desktop calculator built using Java AWT.</b><br> Designed to demonstrate event-driven programming and GUI development fundamentals. </p>
-🚀 About The Project
+# 🧮 Java Desktop Calculator Series
 
-This Calculator Application is a desktop-based Java project developed using AWT (Abstract Window Toolkit).
+A professional desktop calculator project demonstrating the evolution from **Java AWT** to **Java Swing**, highlighting GUI development, event-driven programming, and advanced expression evaluation.
 
-It performs standard two-number arithmetic operations and includes additional mathematical functions.
-This project represents Version 1 of my calculator series before migrating to Java Swing (Version 2) for enhanced UI and functionality.
+---
 
-🎯 Built as part of my Java GUI development practice and OOP mastery.
+## 🚀 Overview
 
-✨ Features
-🔢 Core Arithmetic
+This repository contains **two versions** of a desktop calculator:
 
-➕ Addition
+| Version | Technology | Focus                                        |
+| ------- | ---------- | -------------------------------------------- |
+| **V1**  | Java AWT   | GUI fundamentals & basic arithmetic logic    |
+| **V2**  | Java Swing | Enhanced UI & advanced expression evaluation |
 
-➖ Subtraction
+This project was built as part of my journey to strengthen my understanding of:
 
-✖ Multiplication
+* Object-Oriented Programming (OOP)
+* Event-driven architecture
+* Layout management
+* Stack-based expression evaluation
+* Professional project structuring
 
-➗ Division
+---
 
-📊 Percentage
+# 🖥️ Version 1 – Java AWT Calculator
 
-📐 Extra Mathematical Functions
+## 📌 Description
 
-🔲 Square (x²)
+A foundational calculator built using **Java AWT (Abstract Window Toolkit)**.
+Focuses on understanding GUI components, layouts, and handling user events.
 
-√ Square Root
+## ✨ Features
 
-🔘 Decimal Support
+* ➕ Addition
+* ➖ Subtraction
+* ✖ Multiplication
+* ➗ Division
+* 📊 Percentage
+* 🔲 Square (x²)
+* √ Square Root
+* 🔘 Decimal Support
+* 🧹 Clear Entry (CE)
 
-🧹 Clear Entry (CE)
+## 🛠 Tech Stack
 
-🎨 User Interface
+* Java
+* AWT
+* ActionListener
+* GridLayout
+* NetBeans IDE
 
-Dark-themed layout
+---
 
-Structured button alignment using GridLayout
+# 🖥️ Version 2 – Java Swing Calculator
 
-Custom font styling
+## 📌 Description
 
-Color-coded operation buttons
+An upgraded version built using **Java Swing**, featuring improved UI design and a custom expression evaluation engine.
 
-🛠️ Tech Stack
-Technology	Purpose
-Java	Core Programming Language
-AWT	GUI Components
-Event Handling	ActionListener Implementation
-NetBeans IDE	Development Environment
-🏗️ Application Architecture
+Unlike Version 1, this version supports full expression parsing with operator precedence.
 
-The calculator follows an event-driven model:
+## 🚀 Improvements Over V1
 
-First value stored (fv)
+* Modern Swing-based UI
+* Dark theme layout
+* Stack-based expression evaluation
+* Proper operator precedence
+* Scientific notation support
+* 12-digit display limit
+* Improved formatting logic
+* Cleaner modular code
+* Better error handling (divide-by-zero)
 
-Operator stored (op)
+---
 
-Second value stored (sv)
+# 🧠 Architecture Evolution
 
-Calculation executed on "="
+### Version 1 (AWT – Basic Model)
 
-Result displayed in the text field
+```
+First Value → Operator → Second Value → =
+```
 
-🔍 Core Logic Example
-if (op.equals("+")) {
-    tot = fdv + sdv;
-}
-📂 Project Structure
-Java_Calculator/
+### Version 2 (Swing – Advanced Model)
+
+```
+Full Expression → Stack Evaluation → Result Formatting → Display
+```
+
+---
+
+# 📂 Project Structure
+
+```
+Calculator/
 │
-├── src/
-│   └── Cal/
-│       └── Calculator.java
+├── src/Cal    # AWT_Version
+│   └── Calculator.java
 │
-├── nbproject/
-├── build.xml
-├── manifest.mf
+├── src/Cal    # Swing_Version
+│   └── Cal_App.java
+│
+├── assets/
+│   ├── awt-v1.png
+│   └── swing-v2.png
+│
 └── README.md
-🎓 What I Learned
+```
 
-✔ Java GUI Development
-✔ Event-driven programming concepts
-✔ Layout management (BorderLayout, GridLayout)
-✔ Handling user input safely
-✔ Converting Strings to numeric values
-✔ Structuring a real-world Java project
+---
 
-This project strengthened my foundation before moving to more advanced frameworks like Swing and JavaFX.
+# 📸 Screenshots
 
-🔮 Future Enhancements (Version 2 – Swing)
+![AWT Calculator](assets/awt-v1.png)
+&nbsp; &nbsp;
+![Swing Calculator](assets/swing-v2.png)
 
-Improved UI/UX design
+---
 
-Keyboard input support
+# 🎓 Learning Outcomes
 
-Division-by-zero validation
+✔ Java GUI development fundamentals
+✔ Event-driven programming
+✔ Layout managers (BorderLayout, GridLayout, GroupLayout)
+✔ Stack-based expression evaluation
+✔ Operator precedence implementation
+✔ Scientific number formatting
+✔ Clean GitHub project structuring
 
-Multi-step calculations
+---
 
-Calculation history panel
+# 👨‍💻 Author
 
-Better error handling
+**Imesh Dilshan Perera**
+Software Engineer | Java Developer
 
-👨‍💻 Author
-
-Imesh Dilshan Perera
-Software Engineering Student | Java Developer
-
-🌐 Portfolio: www.imeshperera.com
-
+🌐 Portfolio: [www.imeshperera.com](http://www.imeshperera.com)
 💼 LinkedIn: https://www.linkedin.com/in/imeshperera
-
 💻 GitHub: https://github.com/ImeshPerera
 
-📌 Status
+---
+
+# 📌 Status
 
 ✅ Version 1 – Completed
-🚧 Version 2 – In Progress (Java Swing)
+✅ Version 2 – Completed
+
+---
+
